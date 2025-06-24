@@ -1,0 +1,20 @@
+<div class="rounded-xl shadow-md overflow-hidden bg-white dark:bg-gray-900">
+  <img src="{{ image }}" alt="{{ title }}" class="w-full h-64 object-cover" />
+  <div class="p-4">
+    <h2 class="text-xl font-semibold">{{ title }}</h2>
+    <p class="text-gray-600">{{ description }}</p>
+    <p class="font-bold mt-2">${{ price }}</p>
+    <button 
+      class="mt-2 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+      data-snipcart-add-item
+      data-item-id="{{ id }}"
+      data-item-name="{{ title }}"
+      data-item-price="{{ price }}"
+      data-item-url="/shop/"
+      data-item-description="{{ description }}"
+      data-item-image="{{ image }}"
+    >
+      Add to cart
+    </button>
+  </div>
+</div>
